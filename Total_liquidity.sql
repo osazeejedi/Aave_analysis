@@ -1,0 +1,3 @@
+SELECT SUM (SUPPLIED_USD/1E9) AS TOTAL_SUPPLIED 
+FROM ethereum.aave.ez_deposits
+WHERE AAVE_VERSION = 'Aave V2'
