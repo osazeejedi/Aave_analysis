@@ -18,3 +18,14 @@ We hope to solve these four main questions
 <img width="822" alt="Screenshot 2023-06-01 at 20 01 22" src="https://github.com/osazeejedi/Aave_analysis/assets/63594399/dc072100-717c-4bac-b453-35312af0b40d">
 
 Total Borrowed for Aave v2 : 
+
+Query code: 
+
+```
+SELECT SUM(BORROWED_USD/1E9) AS TOTAL_BORROWED -- THE TOTAL_BORROWED IS IN BILLIONS 
+FROM ethereum.aave.ez_borrows
+WHERE AAVE_VERSION = 'Aave V2'
+
+
+-- AAVE_VERSION Aave V2
+```
